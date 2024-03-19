@@ -1,0 +1,51 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+}
+.icon {
+  height: 1.1em;
+  padding: 0 0.4em 0 0.4em;
+}
+
+.scoreboard {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  margin: 2rem 0 2rem 0;
+  padding: 2rem 0 2rem 0;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonContainer > :nth-child(2) {
+  margin-right: 2rem;
+}
+.bigScore {
+  font-size: 4rem;
+}
+
+.statsRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 4fr 1fr 2fr;
+  align-items: center;
+}
+
+.resetButton {
+  margin-top: 3rem;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.resetButton:hover {
+  border-color: #ff6b00;
+  filter: drop-shadow(0 0 1em #ff6b00);
+}
