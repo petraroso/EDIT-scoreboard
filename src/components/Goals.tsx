@@ -8,10 +8,11 @@ const Goals: React.FC<GoalsProps> = ({ goals }) => {
   return (
     <ul className="goalList">
       {goals.map((str, index) => {
+        const [score, time] = str.split(" ");
         return (
           <li key={index}>
-            <em>{str.substring(4, str.length - 3)}' min</em>
-            <strong>⚽️&nbsp;{str.substring(0, 3)}</strong>
+            <em>{time.substring(0, time.length - 3)}' min</em>
+            <strong>⚽️&nbsp;{score}</strong>
           </li>
         );
       })}
